@@ -1,0 +1,38 @@
+$color-primary-white: #ffffff;
+$color-primary-black: #333333;
+$color-secondary-text: #999999;
+$color-primary-theme: #f38181;
+$color-secondary-theme: #fce38a;
+$color-additional-theme: #95e1d3;
+$color-border-subscribe: #e5e5e5;
+$color-placeholder: #cccccc;
+$gradient: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+$primary-font-stack: 'Montserrat', Helvetica, sans-serif;
+$secondary-font-text: 'Roboto', Helvetica, sans-serif;
+$decoration-text: 'Kaushan Script', Helvetica, sans-serif;
+
+// MIXINS
+
+@mixin background-settings($position: center, $size: cover, $repeat: no-repeat) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}
+
+@mixin font-settings($size: 15px, $height: 1.2, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+// PLACEHOLDER 
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

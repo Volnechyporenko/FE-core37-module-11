@@ -1,0 +1,18 @@
+.button {
+  padding: 12px 32px;
+  border: 2px solid $color-primary-white;
+  color: $color-primary-white;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: uppercase;
+  transition: 0.35s;
+  background-color: transparent;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    color: $color-secondary-theme;
+    border: 2px solid $color-secondary-theme;
+  }
+}
